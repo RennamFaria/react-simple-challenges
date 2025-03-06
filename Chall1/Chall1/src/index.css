@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: #282D35;
+    color: white;
+}
+
+header {
+    height: 90px;
+    background-color: #21222A;
+    padding: 30px 25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav > img {
+    width: 40px;
+    margin-right: 7px;
+}
+
+nav > span {
+    color: #61DAFB;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: calc(100vh - 90px - 60px);
+    text-align: center;
+    
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url(/src/images/react-half-logo.png);
+    background-repeat: no-repeat;
+    background-position: right 70%;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h1 {
+    margin: 0 0 16px 0;
+    font-size: 2rem;
+    color: #61DAFB;
+}
+
+.facts-list {
+    margin-top: 20px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.facts-list > li {
+    padding-block: 10px;
+    line-height: 19px;
+}
+
+.facts-list > li::marker {
+    color: #61DAFB;
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: #21222A;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
